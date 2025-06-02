@@ -2,51 +2,101 @@
   {
     "id": 1,
     "title": "Rain Clock",
-    "image": "/images/linktree.png"
+    "subtitle": "Time drips in drops",
+    "image": "/images/linktree.png",
+    "color": "rgba(135, 206, 250, 0.5)",
+    "date": "Spring 2024",
+    "text": "Rain Clock is an exploration of ambient feedback and natural rhythms in digital space. The player guides rainfall to reveal time and memory.",
+    "skills": ["Unity", "C#", "Shaders", "Sound Design"]
   },
   {
     "id": 2,
     "title": "Bug Parade",
-    "image": "/images/linktree.png"
+    "subtitle": "Marching to their own beat",
+    "image": "/images/linktree.png",
+    "color": "rgba(144, 238, 144, 0.5)",
+    "date": "Fall 2023",
+    "text": "Bug Parade is a playful journey through a miniature world. You guide a troupe of bugs through rhythmic obstacles, each reacting uniquely to your inputs.",
+    "skills": ["Unity", "Animation", "Input Systems"]
   },
   {
     "id": 3,
     "title": "Umbrella Echo",
-    "image": "/images/linktree.png"
+    "subtitle": "Shelter in sound",
+    "image": "/images/linktree.png",
+    "color": "rgba(221, 160, 221, 0.5)",
+    "date": "Winter 2024",
+    "text": "Umbrella Echo blends acoustic space with weather patterns. Hold an umbrella to catch sounds as they fall, crafting a melody based on your path.",
+    "skills": ["Unity", "FMOD", "Physics", "UX Design"]
   },
   {
     "id": 4,
     "title": "Hands On",
-    "image": "/images/linktree.png"
+    "subtitle": "Touch speaks louder than words",
+    "image": "/images/linktree.png",
+    "color": "rgba(255, 182, 193, 0.5)",
+    "date": "Summer 2023",
+    "text": "Hands On explores kinesthetic play through direct interaction. Control each finger independently to solve tactile puzzles in a handcrafted world.",
+    "skills": ["Unity", "Rigging", "Input Mapping"]
   },
   {
     "id": 5,
     "title": "Whistle Path",
-    "image": "/images/linktree.png"
+    "subtitle": "Let your breath guide the way",
+    "image": "/images/linktree.png",
+    "color": "rgba(255, 228, 181, 0.5)",
+    "date": "Spring 2023",
+    "text": "A whistling mechanic propels your character forward. Solve light-based navigation puzzles by varying tone and rhythm.",
+    "skills": ["Unity", "Microphone Input", "Puzzle Design"]
   },
   {
     "id": 6,
     "title": "Root Jam",
-    "image": "/images/linktree.png"
+    "subtitle": "Tangle, grow, groove",
+    "image": "/images/linktree.png",
+    "color": "rgba(210, 180, 140, 0.5)",
+    "date": "Fall 2022",
+    "text": "Root Jam is a cooperative plant-music simulator. Grow roots with friends, entangle rhythms, and make something beautiful underground.",
+    "skills": ["Multiplayer", "Procedural Audio", "C#", "Level Design"]
   },
   {
     "id": 7,
     "title": "Cloudline",
-    "image": "/images/linktree.png"
+    "subtitle": "Chasing the edges of sky",
+    "image": "/images/linktree.png",
+    "color": "rgba(224, 255, 255, 0.5)",
+    "date": "Winter 2023",
+    "text": "Float between layers of the atmosphere. Each altitude changes gameplay and music as you glide, hover, and dip through cloud systems.",
+    "skills": ["Unity", "Particle Systems", "Adaptive Music"]
   },
   {
     "id": 8,
     "title": "Dandelion Chase",
-    "image": "/images/linktree.png"
+    "subtitle": "Catch what drifts away",
+    "image": "/images/linktree.png",
+    "color": "rgba(255, 255, 153, 0.5)",
+    "date": "Summer 2022",
+    "text": "You are a breeze, guiding dandelion seeds through shifting terrain. Simple controls with poetic interactions make this a gentle experience.",
+    "skills": ["Physics", "Visual Scripting", "UI/UX"]
   },
   {
     "id": 9,
     "title": "Clay Memory",
-    "image": "/images/linktree.png"
+    "subtitle": "Sculpt your way back",
+    "image": "/images/linktree.png",
+    "color": "rgba(205, 133, 63, 0.5)",
+    "date": "Spring 2022",
+    "text": "Clay Memory is a tactile narrative game. Sculpt objects from memory to reconstruct a forgotten past, using clay-like manipulation systems.",
+    "skills": ["Unity", "3D Modeling", "Narrative Design"]
   },
   {
     "id": 10,
     "title": "Paper Tide",
-    "image": "/images/linktree.png"
+    "subtitle": "Fold. Float. Remember.",
+    "image": "/images/linktree.png",
+    "color": "rgba(173, 216, 230, 0.5)",
+    "date": "Fall 2021",
+    "text": "Guide a paper boat across a paper ocean, folding your environment to redirect the tide. A meditation on impermanence and motion.",
+    "skills": ["Shaders", "Game Feel", "Origami Simulation"]
   }
 ]
