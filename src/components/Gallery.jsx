@@ -6,7 +6,7 @@ import Typewriter from './Typewriter';
 
 const Gallery = () => {
   const [selectedId, setSelectedId] = useState(1);
-  const cardSpacing = 200;
+  const cardSpacing = 300;
   const jitter = 20;
 
   // Stable position generation
@@ -56,7 +56,8 @@ const Gallery = () => {
 
       {/*<h1 className="fixed text-center top-48 left-48 text-4xl font-bold ">fernando jose alcazar</h1>*/}
       <Typewriter
-        words={["fernando alcazar", "alcazarfjose@gmail.com", "cannedcorgies"]}
+        words={["fernando alcazar", "alcazarfjose", "cannedcorgies"]}
+        link={"https://www.linkedin.com/in/alcazarfjose/"}
         className="fixed top-48 left-48 text-4xl font-bold text-center text-white z-30"
       />
 
@@ -77,6 +78,7 @@ const Gallery = () => {
               textColor={project.textColor}
               style={style}
               isSelected={selectedId === project.id}
+              link={project.link}
               onClick={() => handleSelect(project.id)}
             />
           );
@@ -92,12 +94,13 @@ const Gallery = () => {
 
       <Typewriter
         words={[selectedProject.title]}
-        className="fixed text-center top-48 right-48 text-4xl font-bold z-10 text-white"
+        className="fixed text-center top-36 right-48 text-4xl font-bold z-10 text-white"
+        link = {selectedProject.link}
       />
 
       <Typewriter
         words={selectedProject.skills}
-        className={`fixed bottom-10 right-10 text-xl font-bold text-left w-[10%] z-10 text-${selectedProject.textColor}`}
+        className={`fixed bottom-8 right-10 text-xl text-right font-bold text-left w-[20%] z-10 text-${selectedProject.textColor}`}
       />
     </div>
   );

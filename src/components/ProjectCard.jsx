@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectCard = ({ title, image, color, textColor, style, isSelected, onClick }) => {
+const ProjectCard = ({ title, image, color, textColor, link, style, isSelected, onClick }) => {
   return (
     <div
       className={`content-center rounded-lg cursor-pointer overflow-hidden shadow-lg transition-all duration-300 ease-in-out hover:scale-105 ${

@@ -12,9 +12,18 @@ const ProjectDetail = ({ project, show }) => {
 
   return (
     <div>
-      <h2 className={`${baseClasses} top-64 right-24 text-xl italic z-10 text-${project.textColor} ${enterClasses}`}>{project.subtitle}</h2>
-      <p className={`${baseClasses} bottom-48 right-10 text-sm z-10 text-${project.textColor} ${enterClasses}`}>{project.date}</p>
-      <p className={`${baseClasses} text-wrap top-80 right-24 text-sm w-[30%] z-10 text-${project.textColor} ${enterClasses}`}>"{project.text}"</p>
+      <h2 className={`${baseClasses} top-48 right-24 text-xl italic z-10 text-${project.textColor} ${enterClasses}`}>{project.subtitle}</h2>
+      <p className={`${baseClasses} bottom-24 right-10 text-sm z-10 text-${project.textColor} ${enterClasses}`}>- {project.date}</p>
+      <p
+        className={`${baseClasses} text-wrap top-64 right-36 text-sm w-[30%] z-10 text-${project.textColor} ${enterClasses}`}
+      >
+        {project.text.split('\n').map((line, idx) => (
+          <React.Fragment key={idx}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
+      </p>
     </div>
   );
 };
