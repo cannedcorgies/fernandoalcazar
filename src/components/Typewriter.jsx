@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Typewriter({
   words = [],
@@ -8,28 +8,42 @@ export default function Typewriter({
   deletingSpeed = 50,
   pauseTime = 1000,
 }) {
-  const [index, setIndex] = useState(0); // word index
-  const [subIndex, setSubIndex] = useState(0); // letter index
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
   const [blink, setBlink] = useState(true);
 
-  useEffect(() => {
+  const prevWordsRef = useRef([]);
 
-    // if word typed out...
+  // Reset ONLY if words truly change in content
+  useEffect(() => {
+    const prevWords = prevWordsRef.current;
+    const hasChanged =
+      prevWords.length !== words.length ||
+      prevWords.some((w, i) => w !== words[i]);
+
+    if (hasChanged) {
+      setIndex(0);
+      setSubIndex(0);
+      setDeleting(false);
+      prevWordsRef.current = words;
+    }
+  }, [words]);
+
+  // Main typing logic
+  useEffect(() => {
     if (subIndex === words[index]?.length + 1 && !deleting) {
-      if (words.length === 1) return; // stop here if just one word
+      if (words.length === 1) return;
       setTimeout(() => setDeleting(true), pauseTime);
       return;
     }
 
-    // repeat; delete top one
     if (subIndex === 0 && deleting) {
-      if (words.length === 1) return; // again, stop here if just one
+      if (words.length === 1) return;
       setDeleting(false);
       setIndex((prev) => (prev + 1) % words.length);
       return;
     }
-
 
     const timeout = setTimeout(() => {
       setSubIndex((prev) => prev + (deleting ? -1 : 1));
@@ -38,20 +52,15 @@ export default function Typewriter({
     return () => clearTimeout(timeout);
   }, [subIndex, deleting, index, words, typingSpeed, deletingSpeed, pauseTime]);
 
-  // outside of bank...
-    useEffect(() => {
-    setIndex(0);
-    setSubIndex(0);
-    setDeleting(false);
-  }, [words]);
-
-  // blinking cursor
+  // Cursor blinking
   useEffect(() => {
     const blinkInterval = setInterval(() => {
       setBlink((prev) => !prev);
     }, 500);
     return () => clearInterval(blinkInterval);
   }, []);
+
+  const content = `${words[index]?.substring(0, subIndex) || ""}${blink ? "|" : " "}`;
 
   return (
     <div className={`font-serif ${className}`}>
@@ -62,12 +71,10 @@ export default function Typewriter({
           rel="noopener noreferrer"
           className="hover:underline cursor-pointer"
         >
-          {`${words[index]?.substring(0, subIndex) || ""}${blink ? "|" : " "}`}
+          {content}
         </a>
       ) : (
-        <span>
-          {`${words[index]?.substring(0, subIndex) || ""}${blink ? "|" : " "}`}
-        </span>
+        <span>{content}</span>
       )}
     </div>
   );

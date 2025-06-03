@@ -13,6 +13,11 @@ const Gallery = () => {
   const cardSpacing = 300;
   const jitter = 20;
 
+  const getProjectPositionById = (projectId) => {
+    const index = projects.findIndex(p => p.id === projectId);
+    return projectPositions[index];
+  };
+
   const projectPositions = useMemo(() => {
     return projects.map((_, index) => {
       const randomX = Math.floor(Math.random() * 30);
@@ -76,37 +81,92 @@ const Gallery = () => {
 
       {/* text cues */}
       <Typewriter
+        key={"static"}
         words={["fernando alcazar", "alcazarfjose", "cannedcorgies"]}
         link={"https://www.linkedin.com/in/alcazarfjose/"}
         className="fixed top-48 left-48 text-4xl font-bold text-center text-white z-30"
       />
 
+      {getProjectPositionById(4) && (
+        <Typewriter
+          words={["start here"]}
+          style={{
+            position: 'absolute',
+            top: getProjectPositionById(4).top,
+            left: getProjectPositionById(4).left,
+          }}
+          className="text-4xl font-bold text-center text-white z-30"
+        />
+      )}
+
+      {/* text cues */}
+
+      // NAME BANNER
       <Typewriter
-        words={["start here"]}
-        className={"absolute top-[2200px] left-[40%] text-4xl font-bold text-center text-white z-30"}
+        key="name-banner"
+        words={["fernando alcazar", "alcazarfjose", "cannedcorgies"]}
+        link={"https://www.linkedin.com/in/alcazarfjose/"}
+        className="fixed top-48 left-48 text-4xl font-bold text-center text-white z-30"
       />
 
+      // "START HERE"
+      {getProjectPositionById(4) && (
+        <Typewriter
+          key="start-here"
+          words={["start here"]}
+          style={{
+            position: 'absolute',
+            top: getProjectPositionById(4).top,
+            left: getProjectPositionById(4).left,
+          }}
+          className="text-4xl font-bold text-center text-white z-30"
+        />
+      )}
+
+      // "CLICK PROJECT NAMES TO PLAY"
       <Typewriter
+        key="instructions"
         words={["click project names to play"]}
-        className={"absolute top-[2500px] left-[45%] text-4xl font-bold text-center text-white z-30"}
+        className="absolute top-[2500px] left-[45%] text-4xl font-bold text-center text-white z-30"
       />
 
+      // LINKEDIN
       <Typewriter
+        key="linkedin"
         words={["linkedIn"]}
         link={["https://www.linkedin.com/in/alcazarfjose"]}
-        className={"absolute top-[11200px] left-96 text-4xl font-bold text-center text-white z-30"}
+        className="absolute top-[11200px] left-96 text-4xl font-bold text-center text-white z-30"
       />
 
+      // ITCH.IO
       <Typewriter
+        key="itch-io"
         words={["itch.io"]}
         link={["https://cannedcorgies.itch.io/"]}
-        className={"absolute top-[11300px] left-64 text-4xl font-bold text-center text-white z-30"}
+        className="absolute top-[11300px] left-64 text-4xl font-bold text-center text-white z-30"
       />
 
+      // GITHUB
       <Typewriter
+        key="github"
         words={["github"]}
         link={["https://github.com/cannedcorgies"]}
-        className={"absolute top-[11400px] left-72 text-4xl font-bold text-center text-white z-30"}
+        className="absolute top-[11400px] left-72 text-4xl font-bold text-center text-white z-30"
+      />
+
+      // DYNAMIC TITLE (resets on selectedProject.id)
+      <Typewriter
+        key={`${selectedProject.id}-title`}
+        words={[selectedProject.title]}
+        className="fixed text-center top-36 right-48 text-4xl font-bold z-10 text-white"
+        link={selectedProject.link}
+      />
+
+      // DYNAMIC SKILLS (resets on selectedProject.id)
+      <Typewriter
+        key={`${selectedProject.id}-skills`}
+        words={selectedProject.skills}
+        className={`fixed bottom-8 right-10 text-xl text-right font-bold text-left w-[20%] z-10 text-${selectedProject.textColor}`}
       />
 
       {/* Project cards */}
@@ -138,19 +198,6 @@ const Gallery = () => {
         key={selectedProject.id}
         project={selectedProject}
         show={showDetail}
-      />
-
-      {/* right-side title */}
-      <Typewriter
-        words={[selectedProject.title]}
-        className="fixed text-center top-36 right-48 text-4xl font-bold z-10 text-white"
-        link={selectedProject.link}
-      />
-
-      {/* skills typewriter at the bottom */}
-      <Typewriter
-        words={selectedProject.skills}
-        className={`fixed bottom-8 right-10 text-xl text-right font-bold text-left w-[20%] z-10 text-${selectedProject.textColor}`}
       />
     </div>
   );

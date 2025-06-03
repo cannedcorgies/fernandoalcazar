@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+/* Minimal scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.scrollbar-nub::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-nub::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-nub::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: 3px;
+}
+
+/* Firefox scrollbar */
+.scrollbar-nub {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-color) transparent;
+}
