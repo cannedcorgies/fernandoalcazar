@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fernandoalcazar/static/css/main.1a5e4625.css",
-    "main.js": "/fernandoalcazar/static/js/main.d35d64d6.js",
+    "main.css": "/fernandoalcazar/static/css/main.7641516a.css",
+    "main.js": "/fernandoalcazar/static/js/main.79fa5f0c.js",
     "static/js/453.aa638934.chunk.js": "/fernandoalcazar/static/js/453.aa638934.chunk.js",
     "static/media/Screen Recording 2024-06-25 143523.gif": "/fernandoalcazar/static/media/Screen Recording 2024-06-25 143523.48fecda83ef793be4f51.gif",
     "static/media/Screen-Recording-2024-06-25-1435.gif": "/fernandoalcazar/static/media/Screen-Recording-2024-06-25-1435.ff81ff5c87bf776ea2fc.gif",
@@ -53,23 +53,27 @@
     "static/media/Prototype__Kirby'sDreamCourse.gif": "/fernandoalcazar/static/media/Prototype__Kirby'sDreamCourse.b98db85237ebb892e20f.gif",
     "static/media/Prototype__BallsAnimation.gif": "/fernandoalcazar/static/media/Prototype__BallsAnimation.6ba700eaad68e0545e24.gif",
     "static/media/Prototype__DrillDrillDrill.gif": "/fernandoalcazar/static/media/Prototype__DrillDrillDrill.c153cbe96fb5cb220f4a.gif",
+    "static/media/Screenshot 2025-01-12 195607.png": "/fernandoalcazar/static/media/Screenshot 2025-01-12 195607.7a435e7901de015f45fa.png",
     "static/media/twolilguys.jpg": "/fernandoalcazar/static/media/twolilguys.3fc283e9719cb44fc504.jpg",
     "static/media/fresas.gif": "/fernandoalcazar/static/media/fresas.62e807d6c3eaa279b525.gif",
     "static/media/Prototype__MusicBox01.gif": "/fernandoalcazar/static/media/Prototype__MusicBox01.52e5bf96f48b5b92bd2f.gif",
     "static/media/Prototype__SpiderWeb.gif": "/fernandoalcazar/static/media/Prototype__SpiderWeb.bcfd6b4f84d3f1e6f948.gif",
+    "static/media/mySpeech.png": "/fernandoalcazar/static/media/mySpeech.7367c82d469acf53e5ed.png",
     "static/media/Prototype__ElevatorPitch01.gif": "/fernandoalcazar/static/media/Prototype__ElevatorPitch01.495cd9a0310313e68984.gif",
+    "static/media/Screenshot 2025-01-15 104757.png": "/fernandoalcazar/static/media/Screenshot 2025-01-15 104757.9453e9dab24fffd09e3b.png",
     "static/media/majorRedwick.gif": "/fernandoalcazar/static/media/majorRedwick.fa3476f5ed8f65dcdbdd.gif",
     "static/media/heart.gif": "/fernandoalcazar/static/media/heart.c6bc0b26ff8891598f7b.gif",
     "static/media/presentiment__screenshot.png": "/fernandoalcazar/static/media/presentiment__screenshot.ffe449e7c7fcd222d7a7.png",
+    "static/media/mySpotlight.png": "/fernandoalcazar/static/media/mySpotlight.7d15f2c981e277371370.png",
     "static/media/Prototype__StickTogether.gif": "/fernandoalcazar/static/media/Prototype__StickTogether.ae97ca49713d84a05fb0.gif",
     "static/media/itch-io-icon.png": "/fernandoalcazar/static/media/itch-io-icon.5099b9c5a83b2a0b387c.png",
     "index.html": "/fernandoalcazar/index.html",
-    "main.1a5e4625.css.map": "/fernandoalcazar/static/css/main.1a5e4625.css.map",
-    "main.d35d64d6.js.map": "/fernandoalcazar/static/js/main.d35d64d6.js.map",
+    "main.7641516a.css.map": "/fernandoalcazar/static/css/main.7641516a.css.map",
+    "main.79fa5f0c.js.map": "/fernandoalcazar/static/js/main.79fa5f0c.js.map",
     "453.aa638934.chunk.js.map": "/fernandoalcazar/static/js/453.aa638934.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a5e4625.css",
-    "static/js/main.d35d64d6.js"
+    "static/css/main.7641516a.css",
+    "static/js/main.79fa5f0c.js"
   ]
 }
