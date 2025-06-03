@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fernandoalcazar/static/css/main.7641516a.css",
-    "main.js": "/fernandoalcazar/static/js/main.79fa5f0c.js",
+    "main.css": "/fernandoalcazar/static/css/main.9ab04605.css",
+    "main.js": "/fernandoalcazar/static/js/main.0c80e0f0.js",
     "static/js/453.aa638934.chunk.js": "/fernandoalcazar/static/js/453.aa638934.chunk.js",
     "static/media/Screen Recording 2024-06-25 143523.gif": "/fernandoalcazar/static/media/Screen Recording 2024-06-25 143523.48fecda83ef793be4f51.gif",
     "static/media/Screen-Recording-2024-06-25-1435.gif": "/fernandoalcazar/static/media/Screen-Recording-2024-06-25-1435.ff81ff5c87bf776ea2fc.gif",
@@ -68,12 +68,12 @@
     "static/media/Prototype__StickTogether.gif": "/fernandoalcazar/static/media/Prototype__StickTogether.ae97ca49713d84a05fb0.gif",
     "static/media/itch-io-icon.png": "/fernandoalcazar/static/media/itch-io-icon.5099b9c5a83b2a0b387c.png",
     "index.html": "/fernandoalcazar/index.html",
-    "main.7641516a.css.map": "/fernandoalcazar/static/css/main.7641516a.css.map",
-    "main.79fa5f0c.js.map": "/fernandoalcazar/static/js/main.79fa5f0c.js.map",
+    "main.9ab04605.css.map": "/fernandoalcazar/static/css/main.9ab04605.css.map",
+    "main.0c80e0f0.js.map": "/fernandoalcazar/static/js/main.0c80e0f0.js.map",
     "453.aa638934.chunk.js.map": "/fernandoalcazar/static/js/453.aa638934.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7641516a.css",
-    "static/js/main.79fa5f0c.js"
+    "static/css/main.9ab04605.css",
+    "static/js/main.0c80e0f0.js"
   ]
 }
