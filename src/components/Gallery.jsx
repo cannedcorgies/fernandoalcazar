@@ -77,8 +77,12 @@ const Gallery = () => {
 
       {/* dark overlays */}
       {/*<div className="absolute w-screen h-[125vh] bg-[linear-gradient(180deg,rgba(0,0,0,1)_60%,rgba(255,255,255,0)_100%)] pointer-events-none z-20" />*/}
-      <div className="fixed w-screen h-screen bg-[linear-gradient(90deg,rgba(0,0,0,1)_30%,rgba(255,255,255,0)_100%)] pointer-events-none" />
-
+      <div
+        className="fixed w-screen h-screen pointer-events-none transition-all duration-[2000ms] ease-in-out"
+        style={{
+          background: `linear-gradient(90deg, rgba(${selectedProject.color[0]}, ${selectedProject.color[1]}, ${selectedProject.color[2]}, 1) 30%, rgba(255,255,255,0) 100%)`,
+        }}
+      />
       {/* text cues */}
       <Typewriter
         key={"static"}
@@ -127,7 +131,7 @@ const Gallery = () => {
       <Typewriter
         key="instructions"
         words={["click project names to play"]}
-        className="absolute top-[2500px] left-[45%] text-4xl font-bold text-center text-white z-30"
+        className="absolute top-[3000px] left-[45%] text-4xl font-bold text-center text-white z-30"
       />
 
       // LINKEDIN
@@ -135,7 +139,7 @@ const Gallery = () => {
         key="linkedin"
         words={["linkedIn"]}
         link={["https://www.linkedin.com/in/alcazarfjose"]}
-        className="absolute top-[11200px] left-96 text-4xl font-bold text-center text-white z-30"
+        className="absolute top-[11500px] left-96 text-4xl font-bold text-center text-white z-30"
       />
 
       // ITCH.IO
@@ -143,7 +147,7 @@ const Gallery = () => {
         key="itch-io"
         words={["itch.io"]}
         link={["https://cannedcorgies.itch.io/"]}
-        className="absolute top-[11300px] left-64 text-4xl font-bold text-center text-white z-30"
+        className="absolute top-[11600px] left-64 text-4xl font-bold text-center text-white z-30"
       />
 
       // GITHUB
@@ -151,7 +155,7 @@ const Gallery = () => {
         key="github"
         words={["github"]}
         link={["https://github.com/cannedcorgies"]}
-        className="absolute top-[11400px] left-72 text-4xl font-bold text-center text-white z-30"
+        className="absolute top-[11700px] left-72 text-4xl font-bold text-center text-white z-30"
       />
 
       // DYNAMIC TITLE (resets on selectedProject.id)
